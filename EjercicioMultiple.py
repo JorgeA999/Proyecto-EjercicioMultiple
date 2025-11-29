@@ -15,9 +15,9 @@ nltk.download('stopwords')
 def consumirURL(urlAVisitar):
     try:
 
-        https://github.com/JorgeA999/Proyecto-EjercicioMultiple.git
+        
 
-        response = requests.get(url)
+        response = requests.get(urlAVisitar)
         response.raise_for_status()  # Lanza un error para códigos de estado HTTP incorrectos
         soup = BeautifulSoup(response.text, 'html.parser')
 
