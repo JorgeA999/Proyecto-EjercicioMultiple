@@ -43,7 +43,7 @@ def consumirURL(urlAVisitar):
         todasLasPalabrasJuntasTokenizadas = nltk.word_tokenize(todasLasPalabrasJuntas.lower(), language = 'spanish')
         resultadoLlamadoAnalisisDeTexto = analizar_texto_basico(todasLasPalabrasJuntasTokenizadas)
 
-        cantidadPalabras = f'Cantidad de palabras tokenizadas extraidas de todos los parafos del sitio web {url}: {len(todasLasPalabrasJuntasTokenizadas)}'
+        cantidadPalabras = f'Cantidad de palabras tokenizadas extraidas de todos los parafos del sitio web {urlAVisitar}: {len(todasLasPalabrasJuntasTokenizadas)}'
 
         textoARetornar = resultadoLlamadoAnalisisDeTexto + "\n\n" +cantidadPalabras+ "\n\n" + todasLasPalabrasJuntas
 
